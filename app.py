@@ -69,5 +69,5 @@ def upload_file():
     return render_template('upload.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
+    # Update host to '0.0.0.0' to allow access from other devices
+    app.run(host='0.0.0.0', port=5000, debug=True)
